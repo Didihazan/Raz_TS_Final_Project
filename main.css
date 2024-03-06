@@ -1,0 +1,204 @@
+/* עיצוב כללי */
+body {
+    background-color: #f0e6d2; /* גוון שמנת */
+    color: #172d13; /* ירוק כהה לטקסט */
+    font-family: 'Arial', sans-serif; /* גופן מודרני ונקי */
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; /* מרווח מהעליון והתחתון */
+    padding: 0 20px; /* מרווח מהצדדים */
+    box-sizing: border-box; /* כולל padding ו-border בגודל */
+    border-radius: 5px;
+    border: 1px solid #1c1c1c;
+    box-sizing: border-box; 
+}
+
+.tasks {
+    padding: 0 16px;
+    width: fit-content; /* הוספת קוד זה כדי לאפשר ל-.tasks לקבל רוחב המתאים לתוכן שלו */
+    max-width: 50%; /* קודם היו כאן */
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.tasksText{
+    font-size: 20px;
+    color: #000000;
+}
+h1{
+    padding: 25px;
+    text-align: center;
+    margin-top: 20px;
+    color: #000000; 
+
+}
+h3 {
+    text-align: center;
+    color: #000000; 
+}
+#id_form{
+    max-width: 600px;
+    margin: 50px auto; /* מרווח מהעליון והתחתון */
+    padding: 20px;
+    border: 2px solid #ccc;
+    background-color: #fff; /* רקע לבן לטופס */
+    border-radius: 8px; /* פינות מעוגלות */
+    padding: 20px; /* ריווח פנימי */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה עדינה */
+}
+/* בחירת משימה */
+#id_add_note {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc60;
+    margin-left: 30%;
+    margin-top: 20%;
+}
+
+#id_add_note option {
+    
+    font-family: Arial, sans-serif;
+}
+
+#id_add_note option:checked {
+    background-color: lightgray;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+label{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.form-text {
+    width: 10%;
+    margin-bottom: 80px; /* רווח בין שדות הקלט */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #261765;
+    box-sizing: border-box; /* כולל padding ו-border בגודל */
+}
+/*כפתורים*/
+button {
+    background-color: #e16f28; /* אדום-כתום */
+    color: #fff; /* טקסט לבן */
+    border: none; /* ללא גבול */
+    padding: 10px 20px; /* ריווח פנימי */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* סמן כפתור */
+    transition: background-color 0.3s; /* אפקט מעבר עבור הכפתור */
+}
+
+button:hover {
+    background-color: #dd8046; /* אדום-כתום */
+}
+.btn{
+    margin-left: 43%;
+    margin-top: 20px;
+
+}
+
+/* עיצוב כללי להתראה */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+/*סוויץ עריכה*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+.switch input { 
+    display: inline;
+    margin-top: 12px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+/*כפתור הזזה*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #be4923;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/*סגנון כללי לטבלה*/
+.noteDiv {
+    background-color: #f8e4e4;
+    font-size: 15px;
+    color: #85d169;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    background-image: url('https://images.pexels.com/photos/461717/pexels-photo-461717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: 60%; /* גודל התמונה */
+    background-repeat: no-repeat; /* אי הפעלת חזרות */
+    background-position: right; /* מיקום התמונה - מוצמד לימין */
+   
+}
+
+.noteLabel{
+    font-size: 22px;
+    color: #030303;
+}
+
